@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./Fonts/Ubontu/Ubuntu-Medium.woff2") format("woff2"),
+    url("./Fonts/Ubontu/Ubuntu-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "B Yekan";
+  src: url("./Fonts/BYekan/BYekan.woff2") format("woff2"), url("./Fonts/BYekan/BYekan.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IR Morabba";
+  src: url("./Fonts/Morabba/IRMorabba.woff2") format("woff2"), url("./Fonts/Morabba/IRMorabba.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

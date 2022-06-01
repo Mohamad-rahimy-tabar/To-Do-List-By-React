@@ -1,0 +1,331 @@
+@import url("../stylesheet.css");
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  width: 100%;
+  height: 10%;
+  background-color: #94adcf;
+  margin: 5px 0px 5px 0px;
+  border-radius: 5px;
+  padding: 10px;
+  color: #38404b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.navbar_text,
+.navbar_header,
+.navbar_select {
+  width: 30%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar_text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar_text span {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0px 5px 0px 5px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.select {
+  border: none;
+  outline: none;
+  width: 50%;
+  height: 70%;
+  padding: 5px;
+  background-color: #38404b;
+  border-radius: 8px;
+  color: #94adcf;
+  font-family: "Ubuntu";
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.todoform {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.input {
+  outline: none;
+  border: 2px solid #38404b;
+  width: 20%;
+  height: 35px;
+  border-radius: 5px;
+  padding: 2px 5px;
+  margin-right: 5px;
+  font-family: "Ubuntu", "IR Morabba";
+  font-size: 18px;
+  box-shadow: -1px -1px 31px #94adcf inset;
+}
+
+.input:focus {
+  border-color: #94adcf;
+}
+
+.todolist {
+  width: 100%;
+  height: 60%;
+  margin-top: 5px;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: 80px repeat(auto, 1fr);
+  gap: 20px;
+  justify-content: center;
+  justify-items: center;
+  overflow-y: auto;
+}
+
+.todolist::-webkit-scrollbar,
+.todolist::-webkit-scrollbar-track,
+.todolist::-webkit-scrollbar-thumb {
+  width: 10px;
+}
+
+.todolist::-webkit-scrollbar-track {
+  background: #38404b;
+}
+
+.todolist::-webkit-scrollbar-thumb {
+  background: #94adcf;
+}
+
+.todolistforedit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.todolistempty {
+  grid-column-start: 2;
+  width: 100%;
+  height: 80%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.btn {
+  outline: none;
+  width: 100px;
+  height: 35px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-family: "Ubonto Medium";
+  font-size: 1rem;
+  background-color: #94adcf;
+}
+
+.todo {
+  width: 300px;
+  height: 50px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all 0.5s;
+  padding: 0px 10px 0px 10px;
+}
+
+.checkbox {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todotext,
+.todocomplete {
+  width: 55%;
+  font-size: 20px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.todocomplete {
+  text-decoration: line-through;
+  color: #61676f;
+}
+
+.iconcontainer {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.trash,
+.edit {
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px;
+  transition: all 0.5s;
+  font-size: 20px;
+}
+
+.edit {
+  font-size: 24px;
+}
+
+.trash:hover {
+  color: #ef4444;
+}
+
+.todo:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.edit:hover {
+  color: #facc15;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    height: 20%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .navbar_text {
+    width: 100%;
+    margin-bottom: 2px;
+    height: 30%;
+    order: 2;
+  }
+  .navbar_text span {
+    width: 15px;
+    height: 15px;
+  }
+  .navbar_header {
+    width: 100%;
+    font-size: 8px;
+    height: 30%;
+    margin-bottom: 2px;
+    order: 1;
+  }
+  .navbar_select {
+    width: 100%;
+    font-size: 8px;
+    height: 30%;
+    order: 3;
+  }
+
+  .select {
+    margin-top: 5px;
+    width: 40%;
+    height: 90%;
+    font-size: 8px;
+    font-family: "Ubuntu";
+  }
+
+  .todoform {
+    height: 20%;
+  }
+
+  .todolist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: auto;
+    gap: 10px;
+  }
+
+  .input {
+    width: 50%;
+    height: 20px;
+  }
+  .btn {
+    width: 80px;
+    height: 20px;
+  }
+
+  .todo {
+    width: 200px;
+    height: 40px !important;
+    min-height: 35px !important;
+    font-size: 10px;
+  }
+
+  .navbar_text,
+  .input,
+  .btn,
+  .todolistforedit,
+  .todotext,
+  .todolistempty {
+    font-size: 10px;
+  }
+
+  .trash,
+  .edit {
+    font-size: 12px;
+  }
+  .todolist::-webkit-scrollbar,
+  .todolist::-webkit-scrollbar-thumb,
+  .todolist::-webkit-scrollbar-track {
+    width: 3px;
+  }
+
+  .todolist::-webkit-scrollbar-track {
+    background: #38404b;
+  }
+
+  .todolist::-webkit-scrollbar-thumb {
+    background: #94adcf;
+  }
+
+  .todotext,
+  .todocomplete {
+    margin-left: 5px;
+    font-size: 10px;
+  }
+  .iconcontainer {
+    margin-left: 5px;
+  }
+  .checkbox {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
