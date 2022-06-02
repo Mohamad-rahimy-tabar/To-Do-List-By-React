@@ -231,6 +231,7 @@
     margin-bottom: 2px;
     height: 30%;
     order: 2;
+    font-size: 14px;
   }
   .navbar_text span {
     width: 15px;
@@ -238,7 +239,7 @@
   }
   .navbar_header {
     width: 100%;
-    font-size: 8px;
+    font-size: 14px;
     height: 30%;
     margin-bottom: 2px;
     order: 1;
@@ -252,9 +253,9 @@
 
   .select {
     margin-top: 5px;
-    width: 40%;
-    height: 90%;
-    font-size: 8px;
+    width: 50%;
+    height: 100%;
+    font-size: 12px;
     font-family: "Ubuntu";
   }
 
@@ -273,32 +274,33 @@
 
   .input {
     width: 50%;
-    height: 20px;
+    height: 25px;
   }
   .btn {
     width: 80px;
-    height: 20px;
+    height: 25px;
   }
 
   .todo {
     width: 200px;
     height: 40px !important;
     min-height: 35px !important;
-    font-size: 10px;
+    font-size: 14px;
   }
 
-  .navbar_text,
   .input,
   .btn,
   .todolistforedit,
   .todotext,
   .todolistempty {
-    font-size: 10px;
+    font-size: 14px;
   }
 
-  .trash,
-  .edit {
-    font-size: 12px;
+  .trash {
+    font-size: 14px;
+  }
+  .edit{
+    font-size: 16px;
   }
   .todolist::-webkit-scrollbar,
   .todolist::-webkit-scrollbar-thumb,
